@@ -2,7 +2,7 @@
 //  main.cpp
 //  40 - Combination Sum ||
 //
-//  Created by ynfMac on 2019/6/26.
+//  Created by ynfMac on 2019/10/26.
 //  Copyright © 2019 ynfMac. All rights reserved.
 //
 
@@ -25,7 +25,6 @@ public:
     
 private:
     void combinatonSum(vector<int>& candidates, int start, int target,vector<int> solution){
-
         
         if (target == 0) {
             solutions.push_back(solution);
@@ -45,9 +44,9 @@ private:
         }
     }
 };
-
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
+    
     return 0;
 }
