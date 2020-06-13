@@ -13,7 +13,18 @@ using namespace std;
 class Solution {
 public:
     vector<int> sortArrayByParity(vector<int>& A) {
+        int i = 0;
+        int j = A.size();
         
+        while (i < j) {
+            if (A[i] % 2 == 1) {
+                j -= 1;
+                swap(A[i],A[j]);
+            } else {
+                i += 1;
+            }
+        }
+        return A;
     }
 };
 int main(int argc, const char * argv[]) {
